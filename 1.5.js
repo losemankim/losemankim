@@ -6,7 +6,7 @@ let client = new RpcClient( {
      port: 12345
 });
 (async function() {
-   let blockNumber = await client.generate(102);
+   let blockHash = await client.generate(102);
    console.log(blockHash);
    
    let blockNumber = await client.getBlock(blockHash.result[0]);
